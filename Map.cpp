@@ -19,15 +19,17 @@ Map::Map(int VertexNum) {
 
 bool Map::Init(int EdgeNum){
     //读取顶点标号
-    cout<<">> Vertex Sign:"<<endl;
+    cout<<">> Vertex Sign: ";
     for(int i=0;i<VertexNum;i++){
         cin>>Sign[i];
     }
     //邻接矩阵构建
+    cout<<">> Edges: "<<endl;
     for (int i = 0; i < EdgeNum; i++) {
+        cout<<"--Edge "<<i+1<<" : ";
         int _start, _end, _distance;
         cin>>_start>>_end>>_distance;   //读取有向边的起点、终点、路径长度
-        if(_end >= VertexNum  || _distance >= INF ){
+        if(_end > VertexNum-1  || _distance >= INF ){
             cout<<">> Initialize failed.Check your map!"<<endl;
             return false;
         }
@@ -69,14 +71,20 @@ bool Map::MinimalPath(char start, char end){   //搜索最短路径
         cout<<">> Couldn't find this path!"<<endl;
         return false;
     }
+    cout<<"start,end:"<<_start<<" "<<_end<<endl;
     cout<< ">> Minimal distance: " <<Dist[_start][_end]<<endl;  //输出最短路径
     cout<< ">> Shortest Path: ";
     FindPath(_start,_end);
+    if(Path[_start][_end]==-1){
+        cout<< "--("<< Dist[_start][_end]<<")-->" << Sign[_end] <<endl;
+        return true;
+    }
     cout<< "--("<< Dist[Path[_start][_end]][_end]<<")-->" << Sign[_end] <<endl;
     return true;
 }
 
 void Map::FindPath(int _start,int _end){
+    
     if(Path[_start][_end] == -1){
         cout<< Sign[_start];
     }else{

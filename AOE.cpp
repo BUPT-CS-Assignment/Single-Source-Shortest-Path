@@ -22,7 +22,7 @@ AOE::AOE(int VertexNum,char *_sign,char start,char end):Map(VertexNum){
     SourceNum = 0;
 }
 
-void AOE::Init(int** _origin,int** _dist){
+void AOE::Init(int** _origin,int** _dist){  //初始化主函数
     _init(_origin,_dist,Source);
 }
 

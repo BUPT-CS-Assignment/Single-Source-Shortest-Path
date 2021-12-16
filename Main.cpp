@@ -1,6 +1,4 @@
 #include"SSSP.hpp"
-#include"Map.cpp"
-#include"AOE.cpp"
 
 int main(){
     int vertexNum,edgeNum,start,end;
@@ -23,6 +21,7 @@ int main(){
         aoe.Critical_Path();
     }
     cout<<">> Complete."<<endl;
+    system("pause");
     return 0;
 }
 

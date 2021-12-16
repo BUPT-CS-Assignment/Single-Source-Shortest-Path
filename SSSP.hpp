@@ -3,8 +3,9 @@
 #include<iostream>
 #include<stdio.h>
 #include<string.h>
+#include<windows.h>
 using namespace std;
-#define INF 10000
+#define INF 100000  //宏定义无穷远为100000
 
 ///Map类--有向图
 class Map{  
@@ -29,7 +30,6 @@ public:
     ///////////////////////////////////////
     void CheckDist();  
     void CheckPath();
-    
 };
 
 ///AOE类--AOE网
@@ -52,7 +52,6 @@ public:
     void CheckTopo();   //查看拓扑排序
     void CheckVE();
     void CheckVL();
-    
 };
 
 

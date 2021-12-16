@@ -1,0 +1,17 @@
+[
+{
+  "directory": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/build",
+  "command": "D:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\SSSP.dir\\Main.cpp.obj -c G:\\Coding\\CProject\\DataStructure\\GraphSearch\\SSSP_R\\Main.cpp",
+  "file": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/Main.cpp"
+},
+{
+  "directory": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/build",
+  "command": "D:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\SSSP.dir\\AOE.cpp.obj -c G:\\Coding\\CProject\\DataStructure\\GraphSearch\\SSSP_R\\AOE.cpp",
+  "file": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/AOE.cpp"
+},
+{
+  "directory": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/build",
+  "command": "D:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\SSSP.dir\\Map.cpp.obj -c G:\\Coding\\CProject\\DataStructure\\GraphSearch\\SSSP_R\\Map.cpp",
+  "file": "G:/Coding/CProject/DataStructure/GraphSearch/SSSP_R/Map.cpp"
+}
+]
